@@ -13,4 +13,3 @@ if __name__ == "__main__":
         print("{} {}:".format(num, str2))
     for index in range(1, num + 1):
         print("{}: {}".format(index, sys.argv[index]))
-
