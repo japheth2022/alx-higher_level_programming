@@ -5,8 +5,6 @@
 
 class Square:
 
-    """
-    Defines a Square and its basic properties
+    """Defines a Square and its basic properties"""
 
-    """
     pass # pass as empty
