@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-"""Square class to represent a square"""
+"""module here"""
 
 
 class Square:
@@ -9,4 +9,4 @@ class Square:
     Defines a Square and its basic properties
 
     """
-    pass
+    pass # pass as empty
