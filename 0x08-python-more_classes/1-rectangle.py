@@ -1,10 +1,13 @@
 #!/usr/bin/python3
 
-""" insert module to define a rectangle"""
+""" insert module to define a real rectangle"""
 
 
 class Rectangle:
-    def __init__(self, height=0, width=0):
+
+    """class rectangle with private instance attribute width and height"""
+
+    def __init__(self, width=0, height=0):
         self.__width = width
         self.__height = height
 
