@@ -4,4 +4,6 @@
 
 class rectangle:
 
+    '''Rectangle class defined as empty'''
+
     pass '#empty class'
