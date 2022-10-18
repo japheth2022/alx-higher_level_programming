@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!usr/bin/python3
 
 """ insert module to define a real rectangle"""
 
@@ -21,9 +21,9 @@ class Rectangle:
 
         """method to set width value"""
 
-        if type(value) != int:
+        if not isinstance(value, int):
             raise TypeError("width must be an integer")
-        if width < 0:
+        if value < 0:
             raise ValueError("width must be >= 0")
         else:
             self.__width = value
@@ -40,7 +40,7 @@ class Rectangle:
 
         """method to set value of height"""
 
-        if type(value) != int:
+        if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if height < 0:
             raise ValueError("height must be >= 0")
