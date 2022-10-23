@@ -18,7 +18,8 @@ class Rectangle:
     def width(self):
         """gets the value of width"""
 
-        return self.__width
+    return self.__width
+
     @width.setter
     def width(self, value):
         if type(value) != int:
@@ -51,9 +52,11 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return (0)
         return ((self.__width * 2) + (self.__height * 2))
-    
+
     def __str__(self):
-        """returns the printable representation of the rectangle with character #"""
+        """returns the printable representation of the rectangle.
+        represents triangle with character #.
+        """
         if self.__width == 0 or self.__height == 0:
             return ("")
         rect = []
@@ -63,10 +66,3 @@ class Rectangle:
                 rect.append("\n")
 
         return ("".join(rect))
-
-
-
-
-
-
-
