@@ -1,4 +1,4 @@
-#!/usr/bin/python3i
+#!/usr/bin/python3
 
 """define a class rectangle"""
 
@@ -69,7 +69,14 @@ class Rectangle:
         return("".join(rect))
 
     def __repr__(self):
+
         """returns string representation of rectangle"""
-        rect = "Rectangle (" + str(self.__width)
+
+        rect = "Rectangle(" + str(self.__width)
         rect += ", " + str(self.__height) + ")"
         return (rect)
+
+    def __del__(self):
+
+        """print a message for every deletion of rectangle"""
+        print("Bye rectangle...")
