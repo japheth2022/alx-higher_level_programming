@@ -10,77 +10,90 @@ Functionality
 ``add_integer(...)`` returns the addition ot its arguments.
 
 ::
-  >>>add_integer = __import__('0-add_integer').add_integer
-  >>>add_integer(2, 3)
+
+  >>> add_integer = __import__('0-add_integer').add_integer
+  >>> add_integer(2, 3)
   5
 
 ::
-  >>>add_integer(-3, 4)
+
+  >>> add_integer(-3, 4)
   1
 
 The function works with floats.
 
 ::
-  >>>add_integer(3.7, 4)
+
+  >>> add_integer(3.7, 4)
   7
 
-  >>>add_integer(-2.3, 2.1)
+  >>> add_integer(-2.3, 2.1)
   0
 
 ::
+
   second argument is preset by default to 98
-  >>>add_integer(3)
+  >>> add_integer(3)
   101
 
 ``add_integer(...) requires either integer or float numbers. 
 If one of the arguments is non float and non-integer, a type error is raised.
 
 ::
-  >>>add_integer(4, "man")
+
+  >>> add_integer(4, "man")
   Traceback(Most recent call last):
   TypeError: b must be an integer
 
 ::
-  >>>add_integer("man", 4)
+
+  >>> add_integer("man", 4)
   Traceback(Most recent call last):
   TypeError: a must be an integer
 
 ::
-  >>>add_integer(None)
+
+  >>> add_integer(None)
   Traceback(Most recent call last)
   TypeError: a must be an integer
 
 ::
-  >>>add_integer(3.4, None)
+
+  >>> add_integer(3.4, None)
   Traceback(Most recent call last)
   TypeRrror: b must be an integer
 
 ::
-  >>>add_integer("hello", "man") 
+
+  >>> add_integer("hello", "man") 
   Traceback(Most recent call last)
   TypeError: a must be an integer
 
 function fails when infinity is passed as argument
 
 ::
-  >>>add_integer(float('inf'))
+
+  >>> add_integer(float('inf'))
   Traceback(most recent call last)
   OverflowError:cannot convert float infinity to integer
 
 ::
-  >>>add_integer(3, float('inf'))
+
+  >>> add_integer(3, float('inf'))
   Traceback(Most recent call last)
   OverflowError: cannot convert float infinity to integer
 
 Function fails is NaN numbers are passed as arguments
 
 ::
-  >>>add_integer(float(nan))
+
+  >>> add_integer(float(nan))
   Traceback(most recent call last)
   ValueError: cannot convert float NaN to integer
 
 ::
-  >>>add_integer(3, float(nan))
+
+  >>> add_integer(3, float(nan))
   Traceback(most recent call last)
   ValueError: cannot convert float NaN to integer
 
