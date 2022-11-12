@@ -1,15 +1,21 @@
 #!/usr/bin/python3
 
-""" insert 1-my_list module"""
+'''
+module: 1-my_list
+'''
 
 
 class Mylist:
 
-    """represents Mylist"""
+    '''
+    represents Mylist
+    '''
 
 
 def print_sorted(self):
 
-    """prints sorted list"""
+    '''
+    prints the list, but sorted
+    '''
 
     print(sorted(self))
