@@ -1,14 +1,12 @@
 #!/usr/bin/python3
 
-'''
-module: 1-my_list
+'''module: 1-my_list
 '''
 
 
 class Mylist:
 
-    '''
-    represents Mylist
+    '''Represents Mylist
     '''
     def print_sorted(self):
 
