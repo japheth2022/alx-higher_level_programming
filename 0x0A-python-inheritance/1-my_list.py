@@ -10,8 +10,6 @@ class Mylist:
     '''
     represents Mylist
     '''
-
-
     def print_sorted(self):
 
         '''
