@@ -8,4 +8,4 @@ def append_write(filename="", text=""):
     Returns the characters appended.
     """
     with open(filename, "a", encoding="utf-8") as f:
-        return f.append(text)
+        return f.write(text)
