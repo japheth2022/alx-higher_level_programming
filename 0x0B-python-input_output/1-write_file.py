@@ -4,6 +4,6 @@
 
 def write_file(filename="", text=""):
 
-    """writes a string and returns the number of characters"""
+    """writes a string and returns the characters"""
     with open(filename, mode='w', encoding='UTF-8') as f:
         return(f.write())
