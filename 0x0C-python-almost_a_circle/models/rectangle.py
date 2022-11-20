@@ -2,6 +2,10 @@
 
 """Rectangle class module"""
 
+import os.path
+import json
+import csv
+
 from models.Base import Base
 
 
