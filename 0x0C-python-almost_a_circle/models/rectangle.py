@@ -6,7 +6,7 @@ import os.path
 import json
 import csv
 
-from models.Base import Base
+from models.base import Base
 
 
 class Rectangle(Base):
